@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Login.css"
+import {getBySection} from "../functions";
 
 export default function Login({setEntry}) {
     return (
@@ -17,9 +18,11 @@ export default function Login({setEntry}) {
                 value="Password"
                 />
             <button
-                // onClick={
-                    //     console.log("Login")
-                    // }
+                onClick={()=>{
+                    getBySection(0);
+                    console.log("Login")
+                }
+                    }
                     > 
                 ログイン 
             </button>

@@ -1,4 +1,4 @@
-const knex = require("./src/db/index")
+// const knex = require("./src/db/index")
 
 function getBySection(num) {
     return fetch("/", {
@@ -28,5 +28,7 @@ function getBySection(num) {
     //     console.log(res)
     // })
 }
+
+export {getBySection};
 
 getBySection(0);
