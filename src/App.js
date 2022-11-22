@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Main from "./Main";
 
 function App() {
   const [message, setMessage] = useState();
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       Message from the backend: {message}
+      <Main />
     </div>
   );
 }
