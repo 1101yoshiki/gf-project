@@ -25,7 +25,7 @@
     "migrate-latest": "npx knex migrate:latest --knexfile src/db/knexfile.js",
     "migrate-down": "npx knex migrate:down --knexfile src/db/knexfile.js",
     "seed-data": "npx knex seed:run --knexfile src/db/knexfile.js",
-    "build": "npm install && react-scripts build && npm run migrate-latest && npm run seed-data", 
+    "build": "npm install && react-scripts build", 
     "start": "node ./src/index.js"
   },
   "eslintConfig": {
