@@ -11,6 +11,22 @@ app.use("/api", (req, res) => {
     res.send("Hello, World!");
  });
 
+ app.post("/", async (req, res) => {
+    console.log("req.body",req.body)
+    const key = req.body.toString();
+    const result = await knex
+    .select("userName")
+    .from("userTable")
+    .where({
+       [key]: true
+    })
+    .then(res => res.map(e => e.userName))
+
+    res.send(result);
+ });
+
+
+
 app.listen(port, () => {
   console.log("App listening on port " + port);
 });
