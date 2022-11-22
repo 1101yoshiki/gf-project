@@ -1,0 +1,13 @@
+.hed{
+    font-size: xx-large;
+    text-align: center;
+    margin: 5px, auto;
+}
+
+.si-form{
+    width: 200px;
+    display: flex;
+    padding: 0.5em 1em;
+    margin: 5px auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
