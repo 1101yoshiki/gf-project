@@ -26,7 +26,7 @@
     "migrate-down": "npx knex migrate:down --knexfile src/db/knexfile.js",
     "seed-data": "npx knex seed:run --knexfile src/db/knexfile.js",
     "build": "npm install", 
-    "start": "node ./src/index.js"
+    "start": "node ./server.js"
   },
   "eslintConfig": {
     "extends": [
