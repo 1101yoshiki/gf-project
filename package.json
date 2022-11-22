@@ -24,6 +24,8 @@
     "server-dev": "nodemon server.js",
     "migrate-latest": "npx knex migrate:latest --knexfile src/db/knexfile.js",
     "migrate-down": "npx knex migrate:down --knexfile src/db/knexfile.js",
+    "migrate-make": "npx knex migrate:make --knexfile src/db/knexfile.js",
+    "makeSeed": "knex seed:make --knexfile src/db/knexfile.js",
     "seed-data": "npx knex seed:run --knexfile src/db/knexfile.js",
     "build": "npm install", 
     "start": "node ./server.js"
