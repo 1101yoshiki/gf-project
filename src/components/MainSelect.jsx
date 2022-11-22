@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.css";
+import "../style/Main.css";
 
 export default function MainSelect() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Main.css";
+import "../style/Main.css";
 import MainSelect from "./MainSelect";
 import MainSearch from "./MainSearch";
 import MainShowList from "./MainShowList";

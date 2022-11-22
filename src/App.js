@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Main from "./Main";
+import Main from "./components/Main";
 
 function App() {
   const [message, setMessage] = useState();

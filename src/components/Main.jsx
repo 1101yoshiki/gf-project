@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.css";
+import "../style/Main.css";
 import MainContents from "./MainContents";
 import MainHeader from "./MainHeader";
 import MainSidebarL from "./MainSidebarL";

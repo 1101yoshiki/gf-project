@@ -1,19 +1,22 @@
 // const knex = require("./src/db/index")
 
 function getBySection(num) {
-    return fetch("/", {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body:num
-    })
+    const result =  fetch(`/user/${num}`, 
+    // {
+    //     method: 'GET',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body:num
+    // }
+    )
     .then(res=>res.json())
     .then(res=>{
         console.log(res)
+        return res
     })
        
-
+return result;
 
     // const key = num.toString()
     
@@ -31,4 +34,4 @@ function getBySection(num) {
 
 export {getBySection};
 
-getBySection(0);
+// getBySection(0);

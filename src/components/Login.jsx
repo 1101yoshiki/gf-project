@@ -19,7 +19,7 @@ export default function Login({setEntry}) {
                 />
             <button
                 onClick={()=>{
-                    getBySection(0);
+                    console.log("response",getBySection(0));
                     console.log("Login")
                 }
                     }
