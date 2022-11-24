@@ -37,7 +37,7 @@ function getUsersAllData(userName) {
     return result;
 };
 
-async function addUser(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, ele6, ele7, ele8) {
+function addUser(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, ele6, ele7, ele8) {
     const body =  JSON.stringify({
         userName:userName,
         pass:pass,
@@ -51,7 +51,7 @@ async function addUser(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, ele6,
         "7":ele7,
         "8":ele8
     });
-    await fetch("/singup",{
+    fetch("/singup",{
         method:"POST",
         headers:{
             'Content-Type': 'application/json'
@@ -60,10 +60,9 @@ async function addUser(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, ele6,
     });
 };
 
-async function putUsersData(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, ele6, ele7, ele8) {
+function putUsersData(userName, ele0, ele1, ele2, ele3, ele4, ele5, ele6, ele7, ele8) {
     const body =  JSON.stringify({
         userName:userName,
-        pass:pass,
         "0":ele0,
         "1":ele1,
         "2":ele2,
@@ -74,7 +73,7 @@ async function putUsersData(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, 
         "7":ele7,
         "8":ele8
     });
-    await fetch("/",{
+    fetch("/update",{
         method:"PUT",
         headers:{
             'Content-Type': 'application/json'

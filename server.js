@@ -119,6 +119,17 @@ app.post("/singup", async (req, res) => {
     res.status(200).end();
 });
 
+app.put("/update", async (req, res) => {
+    const userName = req.body.userName;
+    await knex("userTable")
+    .where({
+        userName:userName
+    })
+    .update(req.body);
+
+    res.status(200).end();
+});
+
 
 app.listen(port, () => {
   console.log("App listening on port " + port);
