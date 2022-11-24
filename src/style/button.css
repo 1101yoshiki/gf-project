@@ -1,0 +1,16 @@
+
+.log-btn{
+  width: 70px;
+  text-align: center;
+  margin: 5px 10px;
+  border-color: rgb(0, 140, 255);
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(0, 140, 255) inset, 0 0 0 0 rgb(0, 140, 255);
+  transition: all 150ms ease-in-out;  
+  border-radius: 5px;
+}
+  
+.log-btn:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 140, 255) inset, 0 0 10px 4px rgb(0, 140, 255);
+}
+

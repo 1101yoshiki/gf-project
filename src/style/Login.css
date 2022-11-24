@@ -1,13 +1,5 @@
-.hed{
-    font-size:xx-large;
-    text-align: center;
-    margin: 5px, auto;
-}
-
 .form{
-    width: 400px;
-    height: 300px;
-    display: flex;
+    width: 40%;
     flex-flow: column;
     padding: 0.5em 1em;
     margin: 5px auto;
@@ -16,13 +8,16 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
 
-/* input{
-    margin: 5px auto;
+.lo-input{
+    margin: 10px auto;
     display: flex;
-    color: darkgrey;
-} */
+}
 
-button{
-    margin: 5px auto;
-    display: flex;
+#login-pass{
+    -webkit-text-security:disc;
+}
+
+.warning{
+    display: none;
+    color: rgb(255 0, 0);
 }

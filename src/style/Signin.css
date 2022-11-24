@@ -2,12 +2,36 @@
     font-size: xx-large;
     text-align: center;
     margin: 5px, auto;
+    margin-bottom: 20px;
 }
 
 .si-form{
-    width: 200px;
-    display: flex;
+    width: 40%;
+    flex-flow: column;
     padding: 0.5em 1em;
     margin: 5px auto;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.si-input{
+    margin: 10px auto;
+    display: flex;
+}
+
+#signup-pass{
+    -webkit-text-security:disc;
+}
+
+.cell-group {
+    column-count: 3;
+    margin-left: 10%;
+}
+
+.cell {
+    text-align: left;
+}
+
+.warning{
+    display: none;
+    color: rgb(255 0, 0);
 }

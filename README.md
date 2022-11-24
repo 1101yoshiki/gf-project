@@ -1,12 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project will help you with your coding efforts.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project, you can use:
 
-### `npm start`
+### `Log-in`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

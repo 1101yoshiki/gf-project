@@ -5,14 +5,14 @@ import MainHeader from "./MainHeader";
 import MainSidebarL from "./MainSidebarL";
 import MainSidebarR from "./MainSidebarR";
 
-export default function Main() {
+export default function Main({ setScreen, loginUser }) {
   return (
     <>
       <div>
-        <MainHeader />
+        <MainHeader setScreen={setScreen} />
       </div>
       <div className="main_cell">
-        <MainSidebarL />
+        <MainSidebarL loginUser={loginUser} />
         <MainContents />
         <MainSidebarR />
       </div>

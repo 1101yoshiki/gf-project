@@ -1,18 +1,12 @@
 import "./App.css";
-import { useEffect, useState } from "react";
-import Main from "./components/Main";
+// import { useEffect, useState } from "react";
+// import Main from "./components/Main";
+import Start from "./components/Start";
 
 function App() {
-  const [message, setMessage] = useState();
-  useEffect(() => {
-    fetch('/api')
-    .then(res => res.text())
-    .then(data => setMessage(data));
-  }, []);
   return (
     <div className="App">
-      Message from the backend: {message}
-      <Main />
+      <Start />
     </div>
   );
 }

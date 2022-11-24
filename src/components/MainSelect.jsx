@@ -4,7 +4,7 @@ import "../style/Main.css";
 export default function MainSelect() {
   return (
     <span>教えてほしいこと :
-      <select className="pull-down">
+      <select className="pull-down" id="selection">
         <option value="">選択して下さい</option>
         <option value="0">非同期</option>
         <option value="1">React</option>
@@ -15,6 +15,8 @@ export default function MainSelect() {
         <option value="6">Database</option>
         <option value="7">DOM</option>
         <option value="8">knex</option>
+        <option value="starbucks">Starbucks</option>
+        <option value="ohtani">大谷翔平</option>
       </select>
     </span>
   );

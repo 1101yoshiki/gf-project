@@ -10,7 +10,7 @@ export default function MainContents() {
   return (
     <div className="main_contents">
       <MainSelect />
-      <MainSearch num="3" getSearchResult={getSearchResult} />
+      <MainSearch getSearchResult={getSearchResult} />
       <MainShowList searchResult={searchResult} />
     </div>
   );

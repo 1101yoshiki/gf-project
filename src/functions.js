@@ -1,37 +1,96 @@
 // const knex = require("./src/db/index")
 
 function getBySection(num) {
-    const result =  fetch(`/user/${num}`, 
-    // {
-    //     method: 'GET',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body:num
-    // }
-    )
+    const result =  fetch(`/user/${num}`)
+    .then(res=>res.json())
+    .then(res=>res)
+return result;   
+};
+
+function getUserAndPass(userName,pass) {
+    const result = fetch(`/login/${userName}/${pass}`)
     .then(res=>res.json())
     .then(res=>{
-        console.log(res)
+        console.log("functions res",res)
         return res
     })
-       
-return result;
+    return result;
+};
 
-    // const key = num.toString()
-    
-    // return knex
-    // .select("userName")
-    // .from("userTable")
-    // .where({
-    //    [key]: true
-    // })
-    // .then(res => res.map(e => e.userName))
-    // .then(res=>{
-    //     console.log(res)
-    // })
+function getUser(userName) {
+    const result = fetch(`/login/${userName}`)
+    .then(res=>res.json())
+    .then(res=>{
+        console.log("functions res",res)
+        return res
+    })
+    return result;
+};
+
+function getUsersAllData(userName) {
+    const result = fetch(`/alldata/${userName}`)
+    .then(res=>res.json())
+    .then(res=>{
+        console.log("functions res",res)
+        return res
+    })
+    return result;
+};
+
+async function addUser(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, ele6, ele7, ele8) {
+    const body =  JSON.stringify({
+        userName:userName,
+        pass:pass,
+        "0":ele0,
+        "1":ele1,
+        "2":ele2,
+        "3":ele3,
+        "4":ele4,
+        "5":ele5,
+        "6":ele6,
+        "7":ele7,
+        "8":ele8
+    });
+    await fetch("/singup",{
+        method:"POST",
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:body
+    });
+};
+
+async function putUsersData(userName, pass, ele0, ele1, ele2, ele3, ele4, ele5, ele6, ele7, ele8) {
+    const body =  JSON.stringify({
+        userName:userName,
+        pass:pass,
+        "0":ele0,
+        "1":ele1,
+        "2":ele2,
+        "3":ele3,
+        "4":ele4,
+        "5":ele5,
+        "6":ele6,
+        "7":ele7,
+        "8":ele8
+    });
+    await fetch("/",{
+        method:"PUT",
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:body
+    });
 }
 
-export {getBySection};
+
+
+export {
+    getBySection,
+    getUserAndPass,
+    addUser,
+    getUser,
+    getUsersAllData
+};
 
 // getBySection(0);
