@@ -85,7 +85,7 @@ app.get("/alldata/:userName", (req, res)=> {
         if (result.length === 0) {
             res.type("json").send([{message:"ユーザー情報が存在していません"}]).status(200).end();
         } else {
-            res.send(result).status(200).end()
+            res.send(result).status(200).end();
         }
     }); 
 });
