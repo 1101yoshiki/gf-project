@@ -1,4 +1,4 @@
-.form{
+.form {
     width: 40%;
     flex-flow: column;
     padding: 0.5em 1em;
@@ -8,16 +8,16 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
 
-.lo-input{
+.lo-input {
     margin: 10px auto;
     display: flex;
 }
 
-#login-pass{
+#login-pass {
     -webkit-text-security:disc;
 }
 
-.warning{
+.warning {
     display: none;
     color: rgb(255 0, 0);
 }

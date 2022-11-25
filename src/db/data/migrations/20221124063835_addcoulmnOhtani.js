@@ -5,8 +5,8 @@
 exports.up = function(knex) {
   return knex.schema.
   alterTable("userTable",(table) => {
-    table.boolean("ohtani")
-    table.boolean("starbucks")
+    table.boolean("ohtani");
+    table.boolean("starbucks");
   });
 };
 

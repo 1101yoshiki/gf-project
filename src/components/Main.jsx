@@ -13,7 +13,7 @@ export default function Main({ setScreen, loginUser }) {
       </div>
       <div className="main_cell">
         <MainSidebarL loginUser={loginUser} />
-        <MainContents />
+        <MainContents loginUser={loginUser} />
         <MainSidebarR />
       </div>
     </>

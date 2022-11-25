@@ -1,10 +1,9 @@
 import React from "react";
 import "../style/Login.css"
 import "../style/button.css"
-import {getBySection, getUserAndPass} from "../functions";
-// import Judge from "./Judge";
+import { getUserAndPass } from "../functions";
 
-export default function Login({setEntry, setScreen, setUser}) {
+export default function Login({ setEntry, setScreen, setUser }) {
 
     return (
         <>
@@ -47,7 +46,6 @@ export default function Login({setEntry, setScreen, setUser}) {
                     }else{
                         getUserAndPass(userName,pass)
                             .then(res => {
-                                console.log(res[0].userName);
                                 if(res[0].userName){
                                     setUser(userName);
                                     setScreen("main");
@@ -56,7 +54,6 @@ export default function Login({setEntry, setScreen, setUser}) {
                                     warDiff.style.display = "block";
                                 }
                             });
-                        // setScreen("main");
                     }
                 }
                     }

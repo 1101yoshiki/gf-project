@@ -1,11 +1,11 @@
-.hed{
+.hed {
     font-size: xx-large;
     text-align: center;
     margin: 5px, auto;
     margin-bottom: 20px;
 }
 
-.si-form{
+.si-form {
     width: 40%;
     flex-flow: column;
     padding: 0.5em 1em;
@@ -13,12 +13,12 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
 }
 
-.si-input{
+.si-input {
     margin: 10px auto;
     display: flex;
 }
 
-#signup-pass{
+#signup-pass {
     -webkit-text-security:disc;
 }
 
@@ -31,7 +31,7 @@
     text-align: left;
 }
 
-.warning{
+.warning {
     display: none;
     color: rgb(255 0, 0);
 }

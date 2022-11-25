@@ -2,7 +2,7 @@ import React from "react"
 import "../style/Signin.css"
 import { addUser, getUser } from "../functions";
 
-export default function Signin({setEntry}) {
+export default function Signin({ setEntry} ) {
     
     return(
         <div>
@@ -21,7 +21,6 @@ export default function Signin({setEntry}) {
                     className="si-input"
                     type="text"
                     placeholder="Password"
-                    // style="-webkit-text-security:disc"
                 />
 
                 <div className="warning">
@@ -89,7 +88,6 @@ export default function Signin({setEntry}) {
                     const checkBoxes = document.getElementsByClassName("checkbox");
                     const userName = document.getElementById("signup-user").value;
                     const pass = document.getElementById("signup-pass").value;
-                    // console.log(checkBoxes[0].checked)
                     const warNoText = document.getElementsByClassName("warning")[0];
                     const warDiff = document.getElementsByClassName("warning")[1];
                     const warDup = document.getElementsByClassName("warning")[2];
@@ -116,14 +114,13 @@ export default function Signin({setEntry}) {
                                     checkBoxes[8].checked,
                                 );
                                 setEntry("login");
-                            }else{
+                            } else {
                                 warDup.style.display = "block";
                                 warNoText.style.display = "none";
                                 warDiff.style.display = "none";
                             }
                         })
                     }
-                    console.log("signUp")
                 }}
                 > 
                     登録 

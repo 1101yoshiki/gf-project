@@ -1,39 +1,24 @@
-// const knex = require("./src/db/index")
-
 function getBySection(num) {
     const result =  fetch(`/user/${num}`)
-    .then(res=>res.json())
-    .then(res=>res)
+    .then(res=>res.json());
 return result;   
 };
 
 function getUserAndPass(userName,pass) {
     const result = fetch(`/login/${userName}/${pass}`)
-    .then(res=>res.json())
-    .then(res=>{
-        console.log("functions res",res)
-        return res
-    })
+    .then(res => res.json());
     return result;
 };
 
 function getUser(userName) {
     const result = fetch(`/login/${userName}`)
-    .then(res=>res.json())
-    .then(res=>{
-        console.log("functions res",res)
-        return res
-    })
+    .then(res=>res.json());
     return result;
 };
 
 function getUsersAllData(userName) {
     const result = fetch(`/alldata/${userName}`)
-    .then(res=>res.json())
-    .then(res=>{
-        console.log("functions res",res)
-        return res
-    })
+    .then(res=>res.json());
     return result;
 };
 
@@ -89,7 +74,6 @@ export {
     getUserAndPass,
     addUser,
     getUser,
-    getUsersAllData
+    getUsersAllData,
+    putUsersData
 };
-
-// getBySection(0);
